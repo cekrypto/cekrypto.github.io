@@ -2,56 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cekrypto</title>
   <style>
     body {
+      margin: 0;
       background-color: #0d0f11;
-      color: #d6d6d6;
       font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 60px 20px;
+      color: #d6d6d6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
 
-    img.logo {
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 40px 20px;
+    }
+
+    .logo {
       width: 100px;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
 
     h1 {
-      color: #1de9b6;
+      color: #00d68f;
       font-size: 2.5em;
       margin: 0;
     }
 
-    p.description {
-      color: #c5c5c5;
-      font-size: 1.2em;
-      margin-top: 20px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+    p {
+      margin: 20px auto;
       line-height: 1.6;
+      font-size: 1.1em;
+      max-width: 480px;
     }
 
     .coming-soon {
-      color: #1de9b6;
+      margin-top: 36px;
+      color: #00d68f;
       font-weight: bold;
-      font-size: 1.4em;
-      margin-top: 50px;
+      font-size: 1.5em;
     }
   </style>
 </head>
 <body>
-  <!-- Ganti dengan path logo yang benar -->
-  <img src="cekrypto-logo.png" alt="Cekrypto Logo" class="logo"/>
-
-  <h1>Cekrypto</h1>
-  <p class="description">
-    Cekrypto is a data-curated platform for crypto literacy — replacing FOMO
-    with insight, clarity, and risk-awareness.
-  </p>
-
-  <div class="coming-soon">Coming Soon</div>
+  <div class="container">
+    <img src="cekrypto-logo.png" alt="Cekrypto Logo" class="logo" />
+    <h1>Cekrypto</h1>
+    <p>
+      Cekrypto is a data-curated platform for crypto literacy — replacing FOMO with insight, clarity, and risk-awareness.
+    </p>
+    <div class="coming-soon">Coming Soon</div>
+  </div>
 </body>
 </html>
