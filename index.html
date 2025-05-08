@@ -11,36 +11,56 @@
       font-family: 'Segoe UI', sans-serif;
       text-align: center;
       padding: 60px 20px;
-    }
-    img.logo {
-      width: 120px;
-      height: auto;
-      margin-bottom: 30px;
-    }
-    h1 {
-      font-size: 3rem;
-      color: #1de9b6;
       margin: 0;
     }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 20px auto 40px;
+    .logo {
+      width: 240px;
+      height: auto;
+      margin-bottom: 40px;
+      max-width: 80%;
+    }
+    h1 {
+      color: #15d8a6;
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+    p.tagline {
+      font-size: 20px;
       line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
     }
     .coming-soon {
-      font-size: 1.6rem;
-      color: #1de9b6;
+      font-size: 26px;
       font-weight: bold;
+      color: #15d8a6;
+      margin-bottom: 10px;
+    }
+    .contact {
+      font-size: 16px;
+      color: #888;
+    }
+    @media (max-width: 600px) {
+      .logo {
+        width: 160px;
+      }
+      h1 {
+        font-size: 36px;
+      }
+      .tagline {
+        font-size: 18px;
+      }
     }
   </style>
 </head>
 <body>
   <img src="cekrypto-logo.png" alt="Cekrypto Logo" class="logo" />
   <h1>Cekrypto</h1>
-  <p>
-    Cekrypto is a data-curated platform for crypto literacy — replacing FOMO with insight, clarity, and risk-awareness.
+  <p class="tagline">
+    Cekrypto is a data-curated platform for crypto literacy —
+    replacing FOMO with insight, clarity, and risk-awareness.
   </p>
   <div class="coming-soon">Coming Soon</div>
+  <div class="contact">more info: hello@cekrypto.com</div>
 </body>
 </html>
