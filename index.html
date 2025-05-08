@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cekrypto</title>
   <style>
     body {
@@ -11,44 +11,49 @@
       font-family: 'Segoe UI', sans-serif;
       text-align: center;
       padding: 60px 20px;
-      margin: 0;
     }
-    .logo {
+
+    img.logo {
       width: 240px;
       height: auto;
-      margin-bottom: 40px;
-      max-width: 80%;
+      margin-bottom: 5px; /* jarak logo ke tulisan */
     }
+
     h1 {
-      color: #15d8a6;
-      font-size: 48px;
-      margin-bottom: 30px;
+      color: #00d8a4;
+      font-size: 2.5rem;
+      margin: 10px 0 30px 0; /* jarak tulisan ke deskripsi */
     }
-    p.tagline {
-      font-size: 20px;
-      line-height: 1.6;
+
+    p {
       max-width: 700px;
-      margin: 0 auto 40px auto;
+      margin: 0 auto 30px auto;
+      line-height: 1.6;
     }
+
     .coming-soon {
-      font-size: 26px;
+      color: #00d8a4;
       font-weight: bold;
-      color: #15d8a6;
+      font-size: 1.5rem;
       margin-bottom: 10px;
     }
+
     .contact {
-      font-size: 16px;
+      font-size: 0.9rem;
       color: #888;
     }
+
     @media (max-width: 600px) {
-      .logo {
+      img.logo {
         width: 160px;
       }
+
       h1 {
-        font-size: 36px;
+        font-size: 2rem;
       }
-      .tagline {
-        font-size: 18px;
+
+      .coming-soon {
+        font-size: 1.2rem;
       }
     }
   </style>
@@ -56,9 +61,9 @@
 <body>
   <img src="cekrypto-logo.png" alt="Cekrypto Logo" class="logo" />
   <h1>Cekrypto</h1>
-  <p class="tagline">
-    Cekrypto is a data-curated platform for crypto literacy —
-    replacing FOMO with insight, clarity, and risk-awareness.
+  <p>
+    Cekrypto is a data-curated platform for crypto literacy — replacing FOMO with
+    insight, clarity, and risk-awareness.
   </p>
   <div class="coming-soon">Coming Soon</div>
   <div class="contact">more info: hello@cekrypto.com</div>
