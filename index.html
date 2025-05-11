@@ -7,14 +7,14 @@
   <meta name="googlebot" content="noindex, nofollow"/>
   <title>Cekrypto</title>
 
-  <!-- Redirect jika dibuka dari GitHub Pages -->
+  <!-- Redirect GitHub Pages -->
   <script>
     if (window.location.hostname.includes("github.io")) {
       window.location.href = "https://cekrypto.com";
     }
   </script>
 
-  <!-- Optional Favicon (aktifkan jika sudah punya file) -->
+  <!-- Optional Favicon -->
   <!--
   <link rel="icon" href="favicon.ico" />
   <link rel="apple-touch-icon" href="touch-icon.png" />
@@ -28,6 +28,7 @@
       background-color: #0d0f11;
       color: #d6d6d6;
       font-family: 'Segoe UI', sans-serif;
+      overflow: hidden; /* Prevent scroll */
     }
 
     .main-container {
@@ -35,14 +36,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      height: 100dvh; /* Use full visible height */
       text-align: center;
-      padding: 40px 20px;
+      padding: 20px;
       box-sizing: border-box;
     }
 
     .logo-container img {
-      max-width: 100%;
+      max-width: 180px;
       height: auto;
       margin-bottom: 10px;
     }
@@ -64,7 +65,7 @@
     .coming-soon {
       font-size: 1.6em;
       color: #1dd1a1;
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     .contact-info {
@@ -102,7 +103,7 @@
 
     @media (max-width: 600px) {
       .logo-container img {
-        width: 160px;
+        width: 140px;
       }
 
       h1 {
@@ -138,7 +139,7 @@
       <h1>Cekrypto</h1>
     </div>
 
-    <!-- English Version -->
+    <!-- English Content -->
     <div class="lang-en">
       <p>
         Cekrypto is a machine-learning platform that transforms market data into intelligent alerts and personalized strategy — for traders, teams, and systems.
@@ -147,7 +148,7 @@
       <div class="contact-info">more info: hello@cekrypto.com</div>
     </div>
 
-    <!-- Bahasa Indonesia Version -->
+    <!-- Bahasa Indonesia Content -->
     <div class="lang-id">
       <p>
         Cekrypto adalah platform berbasis machine learning yang mengubah data pasar menjadi alert cerdas dan strategi yang dipersonalisasi — untuk trader, tim, dan sistem.
@@ -162,7 +163,6 @@
       document.querySelector('.lang-en').style.display = lang === 'en' ? 'block' : 'none';
       document.querySelector('.lang-id').style.display = lang === 'id' ? 'block' : 'none';
     }
-    // Default: English
     setLang('en');
   </script>
 </body>
