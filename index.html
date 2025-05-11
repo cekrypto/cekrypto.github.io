@@ -7,31 +7,38 @@
   <meta name="googlebot" content="noindex, nofollow"/>
   <title>Cekrypto</title>
 
-  <!-- ✅ Redirect jika dibuka dari GitHub Pages -->
+  <!-- Redirect jika dibuka dari GitHub Pages -->
   <script>
     if (window.location.hostname.includes("github.io")) {
       window.location.href = "https://cekrypto.com";
     }
   </script>
 
-  <!-- ✅ Optional: Favicon & Touch Icon -->
-  <!-- <link rel="icon" href="favicon.ico" />
-  <link rel="apple-touch-icon" href="touch-icon.png" /> -->
+  <!-- Optional Favicon (aktifkan jika sudah punya file) -->
+  <!--
+  <link rel="icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" href="touch-icon.png" />
+  -->
 
   <style>
-    body {
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
       background-color: #0d0f11;
       color: #d6d6d6;
       font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 60px 20px;
     }
 
-    .logo-container {
+    .main-container {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
-      margin-bottom: 20px;
+      height: 100vh;
+      text-align: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
     }
 
     .logo-container img {
@@ -89,7 +96,9 @@
       background-color: #10ac84;
     }
 
-    .lang-en, .lang-id { display: none; }
+    .lang-en, .lang-id {
+      display: none;
+    }
 
     @media (max-width: 600px) {
       .logo-container img {
@@ -118,32 +127,34 @@
   </style>
 </head>
 <body>
-  <div class="language-toggle">
-    <button onclick="setLang('en')">English</button>
-    <button onclick="setLang('id')">Indonesia</button>
-  </div>
+  <div class="main-container">
+    <div class="language-toggle">
+      <button onclick="setLang('en')">English</button>
+      <button onclick="setLang('id')">Indonesia</button>
+    </div>
 
-  <div class="logo-container">
-    <img src="cekrypto-logo.png" alt="Cekrypto Logo">
-    <h1>Cekrypto</h1>
-  </div>
+    <div class="logo-container">
+      <img src="cekrypto-logo.png" alt="Cekrypto Logo">
+      <h1>Cekrypto</h1>
+    </div>
 
-  <!-- English Content -->
-  <div class="lang-en">
-    <p>
-      Cekrypto is a machine-learning platform that transforms market data into intelligent alerts and personalized strategy — for traders, teams, and systems.
-    </p>
-    <div class="coming-soon">Coming Soon</div>
-    <div class="contact-info">more info: hello@cekrypto.com</div>
-  </div>
+    <!-- English Version -->
+    <div class="lang-en">
+      <p>
+        Cekrypto is a machine-learning platform that transforms market data into intelligent alerts and personalized strategy — for traders, teams, and systems.
+      </p>
+      <div class="coming-soon">Coming Soon</div>
+      <div class="contact-info">more info: hello@cekrypto.com</div>
+    </div>
 
-  <!-- Bahasa Indonesia Content -->
-  <div class="lang-id">
-    <p>
-      Cekrypto adalah platform berbasis machine learning yang mengubah data pasar menjadi alert cerdas dan strategi yang dipersonalisasi — untuk trader, tim, dan sistem.
-    </p>
-    <div class="coming-soon">Segera Hadir</div>
-    <div class="contact-info">informasi: hello@cekrypto.com</div>
+    <!-- Bahasa Indonesia Version -->
+    <div class="lang-id">
+      <p>
+        Cekrypto adalah platform berbasis machine learning yang mengubah data pasar menjadi alert cerdas dan strategi yang dipersonalisasi — untuk trader, tim, dan sistem.
+      </p>
+      <div class="coming-soon">Segera Hadir</div>
+      <div class="contact-info">informasi: hello@cekrypto.com</div>
+    </div>
   </div>
 
   <script>
@@ -151,7 +162,7 @@
       document.querySelector('.lang-en').style.display = lang === 'en' ? 'block' : 'none';
       document.querySelector('.lang-id').style.display = lang === 'id' ? 'block' : 'none';
     }
-    // Default language
+    // Default: English
     setLang('en');
   </script>
 </body>
