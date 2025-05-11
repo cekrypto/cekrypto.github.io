@@ -34,5 +34,5 @@ GitHub Pages is configured via the `main` branch.
 ## 📧 Contact
 
 For any updates or issues, contact:  
-📩 hello@cekrypto.com  
+📩 dev@cekrypto.com  
 🌐 https://cekrypto.com
