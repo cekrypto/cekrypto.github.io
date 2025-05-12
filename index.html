@@ -40,7 +40,7 @@
     }
 
     .logo-container img {
-      max-width: 200px; /* ✅ Logo lebih besar di semua layar */
+      max-width: 200px;
       height: auto;
       margin-bottom: 10px;
     }
@@ -59,17 +59,27 @@
       font-size: 1.05em;
     }
 
-    .coming-soon {
-      font-size: 1.5em;
-      color: #1dd1a1;
+    .cta-button {
+      font-size: 1.3em;
+      color: #0d0f11;
+      background-color: #1dd1a1;
+      padding: 12px 24px;
       margin-top: 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: #10ac84;
     }
 
     .contact-info {
-      margin-top: 10px;
+      margin-top: 16px;
       color: #888;
       font-size: 0.95em;
-      padding: 10px;
     }
 
     .language-toggle {
@@ -98,6 +108,15 @@
       display: none;
     }
 
+    footer {
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+    }
+
     @media (max-width: 600px) {
       .logo-container img {
         width: 200px;
@@ -114,8 +133,9 @@
         line-height: 1.6;
       }
 
-      .coming-soon {
-        font-size: 1.4em;
+      .cta-button {
+        font-size: 1.1em;
+        padding: 10px 18px;
       }
 
       .language-toggle button {
@@ -140,21 +160,25 @@
     <!-- English Version -->
     <div class="lang-en">
       <p>
-        Cekrypto is a machine-learning platform that transforms fundamental and technical market insight into intelligent alerts and personalized strategy — for traders, teams, and systems.
+        Cekrypto is a machine-learning platform that transforms insight into intelligent alerts and personalized strategy — for traders, teams, and systems.
       </p>
-      <div class="coming-soon">Coming Soon</div>
-      <div class="contact-info">more info: dev@cekrypto.com</div>
+      <a href="https://tally.so/r/cekrypto-waitlist" class="cta-button">Get Notified at Launch</a>
+      <div class="contact-info">Contact: hello@cekrypto.com</div>
     </div>
 
     <!-- Bahasa Indonesia Version -->
     <div class="lang-id">
       <p>
-        Cekrypto adalah platform berbasis machine learning yang mengubah insight pasar fundamental dan teknikal menjadi alert cerdas dan strategi yang dipersonalisasi — untuk trader, tim, dan sistem.
+        Cekrypto adalah platform berbasis machine learning yang mengubah insight menjadi alert cerdas dan strategi yang dipersonalisasi — untuk trader, tim, dan sistem.
       </p>
-      <div class="coming-soon">Segera Hadir</div>
-      <div class="contact-info">informasi: dev@cekrypto.com</div>
+      <a href="https://tally.so/r/cekrypto-waitlist" class="cta-button">Dapatkan Notifikasi Saat Launch</a>
+      <div class="contact-info">Kontak: hello@cekrypto.com</div>
     </div>
   </div>
+
+  <footer>
+    © 2025 Cekrypto — Powered by proprietary insight engine
+  </footer>
 
   <script>
     function setLang(lang) {
