@@ -18,70 +18,66 @@
 
   <title>Cekrypto</title>
 
-  <!-- ✅ Redirect if accidentally accessed via GitHub Pages -->
   <script>
     if (window.location.hostname.includes("github.io")) {
       window.location.href = "https://cekrypto.com";
     }
   </script>
 
-  <!-- ✅ Favicon -->
   <link rel="icon" href="cekrypto-favicon.ico" type="image/x-icon" />
 
-  <!-- ✅ Custom Styles -->
   <style>
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
       background-color: #0d0f11;
       color: #d6d6d6;
       font-family: 'Segoe UI', sans-serif;
+      height: 100dvh;
+      overflow: hidden;
     }
 
     .main-container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      min-height: 100dvh;
-      text-align: center;
+      height: 100dvh;
       padding: 20px;
       box-sizing: border-box;
+      text-align: center;
     }
 
     .logo-container img {
-      max-width: 200px;
+      max-width: 160px;
       height: auto;
-      margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 2.2em;
+      font-size: 2em;
       color: #1dd1a1;
-      margin: 6px 0 0;
-      letter-spacing: 0.5px;
+      margin: 10px 0 0;
     }
 
     p {
+      font-size: 1em;
       max-width: 600px;
-      margin: 16px auto;
-      line-height: 1.6;
-      font-size: 1.05em;
+      margin: 10px auto;
+      line-height: 1.5;
     }
 
     .cta-group {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      margin-top: 20px;
+      gap: 10px;
+      margin-top: 10px;
     }
 
     .cta-button {
-      font-size: 1.1em;
+      font-size: 1em;
       color: #0d0f11;
       background-color: #1dd1a1;
-      padding: 12px 24px;
+      padding: 10px 20px;
       border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
@@ -93,26 +89,25 @@
     }
 
     .contact-info {
-      margin-top: 16px;
+      font-size: 0.9em;
       color: #888;
-      font-size: 0.95em;
+      margin-top: 10px;
     }
 
     .language-toggle {
-      margin-bottom: 20px;
+      margin-top: 6px;
     }
 
     .language-toggle button {
       background-color: #1dd1a1;
       color: #0d0f11;
       border: none;
-      padding: 12px 20px;
-      margin: 8px 6px;
-      font-size: 1em;
+      padding: 8px 14px;
+      margin: 0 4px;
+      font-size: 0.95em;
       font-weight: 600;
       cursor: pointer;
       border-radius: 10px;
-      transition: background-color 0.3s ease;
     }
 
     .language-toggle button.active {
@@ -124,30 +119,27 @@
     }
 
     footer {
-      text-align: center;
-      font-size: 0.9em;
+      font-size: 0.85em;
       color: #666;
-      margin: 40px 0 8px;
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 2em;
+        font-size: 1.8em;
       }
 
-      .cta-group {
-        flex-direction: column;
-        gap: 10px;
+      p {
+        font-size: 0.95em;
       }
 
       .cta-button {
-        font-size: 1em;
-        padding: 10px 20px;
+        padding: 10px;
+        font-size: 0.95em;
       }
 
       .language-toggle button {
+        margin: 6px 0;
         width: 100%;
-        margin: 8px 0;
       }
     }
   </style>
@@ -155,18 +147,16 @@
 <body>
 
   <div class="main-container">
+    <div class="logo-container">
+      <img src="cekrypto-logo.png" alt="Cekrypto Machine Learning Insight Logo">
+      <h1>Cekrypto</h1>
+    </div>
 
     <div class="language-toggle">
       <button id="btn-en" onclick="setLang('en')">English</button>
       <button id="btn-id" onclick="setLang('id')">Indonesia</button>
     </div>
 
-    <div class="logo-container">
-      <img src="cekrypto-logo.png" alt="Cekrypto Machine Learning Insight Logo">
-      <h1>Cekrypto</h1>
-    </div>
-
-    <!-- ✅ English Version -->
     <div class="lang-en">
       <p>Cekrypto is a machine-learning platform that transforms curated insight into intelligent alerts and personalized strategy — for traders, teams, and systems.</p>
       <div class="cta-group">
@@ -176,7 +166,6 @@
       <div class="contact-info">Contact: hello@cekrypto.com</div>
     </div>
 
-    <!-- ✅ Bahasa Indonesia Version -->
     <div class="lang-id">
       <p>Cekrypto adalah platform berbasis machine learning yang mengubah insight terkurasi menjadi alert cerdas dan strategi personal — untuk trader, tim, dan sistem.</p>
       <div class="cta-group">
@@ -186,11 +175,10 @@
       <div class="contact-info">Kontak: hello@cekrypto.com</div>
     </div>
 
+    <footer>
+      © 2025 Cekrypto — Powered by proprietary insight engine
+    </footer>
   </div>
-
-  <footer>
-    © 2025 Cekrypto — Powered by proprietary insight engine
-  </footer>
 
   <script>
     function setLang(lang) {
