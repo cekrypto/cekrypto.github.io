@@ -22,7 +22,7 @@
     .container {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       text-align: center;
       height: 100dvh;
@@ -32,36 +32,37 @@
 
     h2 {
       color: #1dd1a1;
-      margin-bottom: 6px;
+      margin-bottom: 12px;
+      font-size: 1.4em;
     }
 
     p {
       font-size: 0.92em;
       max-width: 640px;
-      margin: 0 auto 6px;
-      line-height: 1.4;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 0.9em;
-      margin: 8px 0;
-    }
-
-    li {
-      margin: 3px 0;
+      margin: 0 auto 12px;
+      line-height: 1.5;
     }
 
     .section {
       font-size: 0.9em;
       max-width: 700px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 16px;
+    }
+
+    li {
+      margin: 6px 0;
     }
 
     .buttons {
-      margin-top: 10px;
+      margin: 16px 0 10px;
       display: flex;
-      gap: 10px;
+      gap: 16px;
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -82,11 +83,12 @@
       font-size: 0.75em;
       color: #777;
       margin-top: 12px;
+      line-height: 1.4;
       max-width: 700px;
     }
 
     .language-toggle {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .language-toggle button {
@@ -117,10 +119,10 @@
       <button id="btn-id" onclick="setLang('id')">Indonesia</button>
     </div>
 
+    <!-- English -->
     <div class="lang-en">
       <h2>Solving Real Problems Faced by Crypto Users</h2>
       <p>Cekrypto helps <strong>Traders</strong>, <strong>Teams</strong>, and <strong>Systems</strong> navigate risk with clarity by turning complex market signals into meaningful insight.</p>
-
       <div class="section">
         <strong>Traders (e.g. retail swing traders, long-term holders)</strong>
         <ul>
@@ -132,53 +134,49 @@
           <li>❌ Scattered narrative tracking → ✅ Dashboard with filters & export tools</li>
           <li>❌ No insight base for content → ✅ Visual-ready signal cards & trend pulse</li>
         </ul>
-        <strong>Systems (e.g. wallet, exchanges, insight dashboards)</strong>
+        <strong>Systems (e.g. wallets, exchanges, insight dashboards)</strong>
         <ul>
           <li>❌ Raw API overload → ✅ Unified, ready-to-use signal API</li>
           <li>❌ Missing local intelligence → ✅ Contextual layer for SEA & global markets</li>
         </ul>
       </div>
-
       <div class="buttons">
-        <a href="/" class="cta-button">Back to Homepage</a>
+        <a href="/" class="cta-button">← Back to Homepage</a>
         <a href="https://tally.so/r/cekrypto-waitlist" class="cta-button">Join the Waitlist</a>
       </div>
-
       <footer>
-        Disclaimer: Cekrypto is in active MVP development. All insights are for educational purposes only and do not constitute financial advice.<br>
+        Disclaimer: Cekrypto is in active MVP development. All insights are for educational purposes and do not constitute financial advice.<br>
         © 2025 Cekrypto — Powered by proprietary insight engine.
       </footer>
     </div>
 
+    <!-- Indonesian -->
     <div class="lang-id">
       <h2>Mengatasi Masalah Nyata Pengguna Kripto</h2>
-      <p>Cekrypto membantu <strong>Trader</strong>, <strong>Tim</strong>, dan <strong>Sistem</strong> memahami risiko dengan lebih jelas melalui insight terkurasi dari sinyal pasar yang kompleks.</p>
-
+      <p>Cekrypto membantu <strong>Trader</strong>, <strong>Tim</strong>, dan <strong>Sistem</strong> memahami risiko dengan lebih jelas melalui insight yang bermakna dari sinyal pasar yang kompleks.</p>
       <div class="section">
-        <strong>Trader (e.g. swing trader ritel, investor jangka panjang)</strong>
+        <strong>Trader (contoh: swing trader, investor jangka panjang)</strong>
         <ul>
           <li>❌ FOMO & keputusan emosional → ✅ Alert dengan konteks dan strategi preset</li>
-          <li>❌ Data pasar tersebar → ✅ Insight terintegrasi dalam satu tampilan</li>
+          <li>❌ Data pasar terpencar → ✅ Sinyal terintegrasi & strategi siap pakai</li>
         </ul>
-        <strong>Tim (e.g. influencer, analis komunitas, kreator konten)</strong>
+        <strong>Tim (contoh: influencer, analis komunitas, kreator konten)</strong>
         <ul>
-          <li>❌ Sulit lacak narasi → ✅ Dashboard narasi + filter & fitur ekspor</li>
-          <li>❌ Tidak ada bahan konten → ✅ Insight visual siap dibagikan</li>
+          <li>❌ Sulit melacak narasi → ✅ Dashboard dengan filter & fitur ekspor</li>
+          <li>❌ Tidak ada bahan konten → ✅ Insight visual siap pakai dan tren narasi</li>
         </ul>
-        <strong>Sistem (e.g. wallet, exchange, tools analisis)</strong>
+        <strong>Sistem (contoh: wallet, exchange, tools analisis)</strong>
         <ul>
-          <li>❌ API mentah sulit digunakan → ✅ API insight siap pakai dengan struktur ringkas</li>
-          <li>❌ Tidak ada konteks lokal → ✅ Layer insight lokal & global</li>
+          <li>❌ API mentah berlebihan → ✅ API insight terpadu siap pakai</li>
+          <li>❌ Minim konteks lokal → ✅ Insight dengan lapisan kontekstual Asia Tenggara & global</li>
         </ul>
       </div>
-
       <div class="buttons">
-        <a href="/" class="cta-button">Kembali ke Beranda</a>
+        <a href="/" class="cta-button">← Kembali ke Beranda</a>
         <a href="https://tally.so/r/cekrypto-waitlist" class="cta-button">Gabung Waitlist</a>
       </div>
-
       <footer>
-        Disclaimer: Cekrypto masih dalam tahap pengembangan MVP. Semua insight bersifat edukatif, bukan saran keuangan.<br>
+        Disclaimer: Cekrypto masih dalam tahap pengembangan MVP. Insight yang tersedia bersifat edukatif dan bukan merupakan saran keuangan.<br>
         © 2025 Cekrypto — Ditenagai oleh mesin insight cerdas.
       </footer>
     </div>
