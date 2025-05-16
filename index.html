@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ✅ Basic Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Cekrypto is a machine-learning platform that delivers intelligent market alerts and personalized insight strategy.">
   <meta name="robots" content="noindex, nofollow"/>
   <meta name="googlebot" content="noindex, nofollow"/>
-
-  <!-- ✅ Social Sharing (Open Graph & Twitter) -->
   <meta property="og:title" content="Cekrypto – ML-Powered Insight Platform">
   <meta property="og:description" content="Receive curated alerts and strategy powered by machine learning.">
   <meta property="og:image" content="https://cekrypto.com/og-image.png">
@@ -26,137 +23,164 @@
 
   <link rel="icon" href="cekrypto-favicon-32x32-black.ico" type="image/x-icon" />
 
-  <!-- ✅ Ubah bagian style -->
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #0d0f11;
-    color: #d6d6d6;
-    font-family: 'Segoe UI', sans-serif;
-    height: 100dvh;
-    overflow: hidden;
-  }
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d0f11;
+      color: #d6d6d6;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100dvh;
+      overflow: hidden;
+    }
 
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100dvh;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-  }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100dvh;
+      padding: 20px;
+      box-sizing: border-box;
+      text-align: center;
+    }
 
-  .logo-container img {
-    max-width: 160px;
-    height: auto;
-    margin-bottom: 8px;
-  }
-
-  h1 {
-    font-size: 2em;
-    color: #1dd1a1;
-    margin: 0 0 12px;
-  }
-
-  p {
-    font-size: 1em;
-    max-width: 600px;
-    margin: 10px auto 20px;
-    line-height: 1.6;
-    color: #bbb;
-  }
-
-  .cta-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 30px; /* memberi ruang dengan footer */
-  }
-
-  .cta-button {
-    font-size: 1em;
-    color: #0d0f11;
-    background-color: #1dd1a1;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-
-  .cta-button:hover {
-    background-color: #10ac84;
-  }
-
-  .contact-info {
-    font-size: 0.9em;
-    color: #888;
-    margin-top: -10px;
-    margin-bottom: 10px;
-  }
-
-  .language-toggle {
-    margin-top: 8px;
-    margin-bottom: 4px;
-  }
-
-  .language-toggle button {
-    background-color: #1dd1a1;
-    color: #0d0f11;
-    border: none;
-    padding: 8px 14px;
-    margin: 0 4px;
-    font-size: 0.95em;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-
-  .language-toggle button.active {
-    background-color: #10ac84;
-  }
-
-  .lang-en, .lang-id {
-    display: none;
-  }
-
-  footer {
-    font-size: 0.85em;
-    color: #666;
-    margin-top: auto;
-  }
-
-  @media (max-width: 600px) {
     .logo-container img {
-      max-width: 130px;
+      max-width: 140px;
+      height: auto;
+      margin-bottom: 8px;
     }
 
     h1 {
-      font-size: 1.8em;
+      font-size: 2.4em;
+      color: #1dd1a1;
+      margin: 0 0 12px;
     }
 
     p {
-      font-size: 0.95em;
-    }
-
-    .cta-button {
-      padding: 10px;
-      font-size: 0.95em;
-    }
-
-    .language-toggle button {
-      margin: 6px 0;
-      width: 100%;
+      font-size: 1em;
+      max-width: 600px;
+      margin: 10px auto 20px;
+      line-height: 1.6;
+      color: #bbb;
     }
 
     .cta-group {
-      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
     }
-  }
-</style>
+
+    .cta-button {
+      font-size: 1em;
+      color: #0d0f11;
+      background-color: #1dd1a1;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #10ac84;
+    }
+
+    .contact-info {
+      font-size: 0.9em;
+      color: #888;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+
+    .language-toggle {
+      margin-top: 8px;
+      margin-bottom: 10px;
+    }
+
+    .language-toggle button {
+      background-color: #1dd1a1;
+      color: #0d0f11;
+      border: none;
+      padding: 8px 14px;
+      margin: 0 4px;
+      font-size: 0.95em;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .language-toggle button.active {
+      background-color: #10ac84;
+    }
+
+    .lang-en, .lang-id {
+      display: none;
+    }
+
+    footer {
+      font-size: 0.85em;
+      color: #666;
+      margin-top: auto;
+    }
+
+    /* Mobile (<600px) */
+    @media (max-width: 600px) {
+      .logo-container img {
+        max-width: 120px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 0.95em;
+      }
+
+      .cta-button {
+        padding: 10px;
+        font-size: 0.95em;
+      }
+
+      .language-toggle button {
+        margin: 6px 0;
+        width: 100%;
+      }
+
+      .cta-group {
+        margin-bottom: 40px;
+      }
+    }
+
+    /* Tablet (601px–1024px) */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      .logo-container img {
+        max-width: 150px;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
+
+      p {
+        font-size: 1em;
+        max-width: 520px;
+      }
+
+      .cta-button {
+        font-size: 1em;
+        padding: 12px 24px;
+      }
+
+      .language-toggle button {
+        font-size: 1em;
+        padding: 10px 16px;
+      }
+    }
+  </style>
 </head>
 <body>
 
