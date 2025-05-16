@@ -36,7 +36,7 @@
       font-size: 0.95em;
       max-width: 700px;
       margin: 0 auto 16px;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .section {
@@ -75,12 +75,14 @@
       background-color: #1dd1a1;
       color: #0d0f11;
       border: none;
-      padding: 10px 20px;
+      padding: 12px 24px;
       border-radius: 8px;
       font-weight: bold;
       text-decoration: none;
-      font-size: 0.95em;
+      font-size: 1em;
       cursor: pointer;
+      min-width: 180px;
+      text-align: center;
     }
 
     footer {
@@ -112,6 +114,49 @@
 
     .lang-en, .lang-id {
       display: none;
+    }
+
+    /* Tablet */
+    @media (min-width: 601px) and (max-width: 1024px) {
+      h2 {
+        font-size: 1.4em;
+      }
+
+      p, .section, ul, li {
+        font-size: 0.95em;
+      }
+
+      .cta-button {
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 1.3em;
+      }
+
+      p, .section, ul, li {
+        font-size: 0.95em;
+        line-height: 1.6;
+      }
+
+      .cta-button {
+        width: 100%;
+        padding: 14px;
+        font-size: 1em;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .container {
+        padding: 20px 16px 32px;
+      }
     }
   </style>
 </head>
@@ -147,8 +192,8 @@
         </ul>
       </div>
       <div class="buttons">
-        <a href="/" class="cta-button">Back to Homepage</a>
         <a href="https://tally.so/r/cekrypto-waitlist" class="cta-button">Join the Waitlist</a>
+        <a href="/" class="cta-button">Back to Homepage</a>
       </div>
       <footer>
         Disclaimer: Cekrypto is in active MVP development. All insights are for educational purposes only and do not constitute financial advice.<br>
@@ -181,8 +226,8 @@
         </ul>
       </div>
       <div class="buttons">
-        <a href="/" class="cta-button">Kembali ke Beranda</a>
         <a href="https://tally.so/r/cekrypto-waitlist" class="cta-button">Gabung Waitlist</a>
+        <a href="/" class="cta-button">Kembali ke Beranda</a>
       </div>
       <footer>
         Disclaimer: Cekrypto masih dalam tahap pengembangan MVP. Semua insight bersifat edukatif dan bukan merupakan saran keuangan.<br>
