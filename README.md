@@ -6,44 +6,53 @@ This is the public landing page for [cekrypto.com](https://cekrypto.com), built 
 
 ## 🔍 Overview
 
-**Cekrypto** is a machine-learning-powered insight platform that transforms curated market signals into intelligent alerts and personalized strategy — for traders, teams, and systems.
+**Cekrypto** is a curated crypto intelligence platform for traders, teams, and systems.
 
 This landing page is:
 
-- 🎯 Minimal and focused on communicating the platform's core value
-- 🌐 Supports bilingual display (English & Bahasa Indonesia)
-- 🚫 Configured to avoid indexing (SEO stealth via robots.txt, meta tags, and headers)
-- 🌀 Deployed with GitHub Pages + Cloudflare custom domain
-- 🧭 Redirects automatically from `cekrypto.github.io` to `cekrypto.com`
+- 🎯 Minimal and focused on brand-first communication
+- 🌐 Supports bilingual interface (English & Bahasa Indonesia)
+- 🧠 Highlights problems and solutions tailored for different user groups
+- 🚫 SEO-stealth enabled (robots.txt, meta noindex, custom headers)
+- 🌀 Automatically redirects from `cekrypto.github.io` to the custom domain
 
 ---
 
 ## 🗂️ File Structure
 
-| File                  | Description                                         |
-|-----------------------|-----------------------------------------------------|
-| `index.html`          | Main landing page (fullscreen, language toggle)     |
-| `cekrypto-logo.png`   | Cropped brand logo                                  |
-| `cekrypto-favicon.ico`| Custom favicon for browser tabs                     |
-| `_headers`            | HTTP headers to block indexing + security hardening |
-| `robots.txt`          | Prevents web crawler access (`Disallow: /`)         |
+| File                        | Description                                                   |
+|-----------------------------|---------------------------------------------------------------|
+| `index.html`                | Main landing screen (logo, tagline, language toggle, CTA)     |
+| `problems.html`             | Explains key problems and how Cekrypto solves them            |
+| `cekrypto-logo.png`         | Brand logo (centered display)                                 |
+| `cekrypto-favicon.ico`      | Custom favicon for browser tabs                               |
+| `_headers`                  | Security and indexing rules for static deployment             |
+| `robots.txt`                | Blocks crawler indexing (`Disallow: /`)                       |
 
 ---
 
 ## 🚀 Deployment
 
-| Item               | Value                                |
-|--------------------|---------------------------------------|
-| Static Host        | GitHub Pages (main branch)            |
+| Item               | Value                                  |
+|--------------------|-----------------------------------------|
+| Static Host        | GitHub Pages (`main` branch)            |
 | Custom Domain      | [https://cekrypto.com](https://cekrypto.com) |
-| DNS Provider       | Cloudflare                            |
-| Build System       | None (pure HTML/CSS/JS)               |
+| DNS Provider       | Cloudflare                              |
+| Build System       | None (vanilla HTML/CSS/JS only)         |
+
+---
+
+## 📌 Notes
+
+- This page is part of the MVP rollout for Cekrypto
+- Future versions will integrate animated UI, better transitions, and embedded waitlist forms
+- All insights described are for educational purposes only
 
 ---
 
 ## 📧 Contact
 
-For updates, inquiries, or access to full platform features, contact:
+For updates, collaboration, or to request platform access:
 
-- ✉️ Email: [dev@cekrypto.com](mailto:dev@cekrypto.com)
+- ✉️ Email: [hello@cekrypto.com](mailto:hello@cekrypto.com)
 - 🌐 Website: [https://cekrypto.com](https://cekrypto.com)
