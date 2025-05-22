@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="Content-Language" content="en">
   <meta name="description" content="Cekrypto is a curated crypto intelligence platform for traders, teams, and systems.">
   <meta name="robots" content="noindex, nofollow"/>
   <meta name="googlebot" content="noindex, nofollow"/>
@@ -12,6 +13,7 @@
   <meta property="og:url" content="https://cekrypto.com">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://cekrypto.com/">
 
   <title>Cekrypto</title>
 
@@ -22,6 +24,7 @@
   </script>
 
   <link rel="icon" href="cekrypto-favicon-32x32-black.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="cekrypto-favicon-32x32-black.png" />
 
   <style>
     html, body {
@@ -33,7 +36,6 @@
       height: 100dvh;
       overflow: hidden;
     }
-
     .main-container {
       display: flex;
       flex-direction: column;
@@ -44,19 +46,16 @@
       box-sizing: border-box;
       text-align: center;
     }
-
     .logo-container img {
       max-width: 140px;
       height: auto;
       margin-bottom: 8px;
     }
-
     h1 {
       font-size: 2.4em;
       color: #1dd1a1;
       margin: 0 0 12px;
     }
-
     p {
       font-size: 1em;
       max-width: 600px;
@@ -64,7 +63,6 @@
       line-height: 1.6;
       color: #bbb;
     }
-
     .cta-group {
       display: flex;
       flex-direction: column;
@@ -72,7 +70,6 @@
       margin-bottom: 30px;
       padding-bottom: 10px;
     }
-
     .cta-button {
       font-size: 1em;
       color: #0d0f11;
@@ -83,23 +80,19 @@
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
-
     .cta-button:hover {
       background-color: #10ac84;
     }
-
     .contact-info {
       font-size: 0.9em;
       color: #888;
       margin-top: -10px;
       margin-bottom: 10px;
     }
-
     .language-toggle {
       margin-top: 8px;
       margin-bottom: 10px;
     }
-
     .language-toggle button {
       background-color: #1dd1a1;
       color: #0d0f11;
@@ -111,72 +104,57 @@
       cursor: pointer;
       border-radius: 10px;
     }
-
     .language-toggle button.active {
       background-color: #10ac84;
     }
-
     .lang-en, .lang-id {
       display: none;
     }
-
     footer {
       font-size: 0.85em;
       color: #666;
       margin-top: auto;
     }
-
     @media (max-width: 600px) {
       .main-container {
         padding-top: 48px;
       }
-
       .logo-container img {
         max-width: 120px;
       }
-
       h1 {
         font-size: 1.8em;
       }
-
       p {
         font-size: 0.95em;
       }
-
       .cta-button {
         padding: 10px;
         font-size: 0.95em;
       }
-
       .language-toggle button {
         margin: 6px 0;
         width: 100%;
       }
-
       .cta-group {
         margin-bottom: 40px;
       }
     }
-
     @media (min-width: 601px) and (max-width: 1024px) {
       .logo-container img {
         max-width: 150px;
       }
-
       h1 {
         font-size: 2.2em;
       }
-
       p {
         font-size: 1em;
         max-width: 520px;
       }
-
       .cta-button {
         font-size: 1em;
         padding: 12px 24px;
       }
-
       .language-toggle button {
         font-size: 1em;
         padding: 10px 16px;
@@ -188,16 +166,16 @@
 
   <div class="main-container">
     <div class="logo-container">
-      <img src="cekrypto-logo-512-proportional.png" alt="Cekrypto Logo">
+      <img src="cekrypto-logo-512-proportional.png" alt="Cekrypto – Curated Crypto Intelligence Logo">
       <h1>Cekrypto</h1>
     </div>
 
     <div class="language-toggle">
-      <button id="btn-en" onclick="setLang('en')">English</button>
-      <button id="btn-id" onclick="setLang('id')">Indonesia</button>
+      <button id="btn-en" onclick="setLang('en')" aria-label="Toggle to English version">English</button>
+      <button id="btn-id" onclick="setLang('id')" aria-label="Toggle to Indonesian version">Indonesia</button>
     </div>
 
-    <div class="lang-en">
+    <div class="lang-en" lang="en">
       <p>Cekrypto is a curated crypto intelligence platform for traders, teams, and systems.</p>
       <div class="cta-group">
         <a href="https://tally.so/r/cekrypto-waitlist" class="cta-button">Get Notified at Launch</a>
@@ -206,7 +184,7 @@
       <div class="contact-info">Contact: hello@cekrypto.com</div>
     </div>
 
-    <div class="lang-id">
+    <div class="lang-id" lang="id">
       <p>Cekrypto adalah platform intelijen kripto yang terkurasi untuk trader, tim, dan sistem.</p>
       <div class="cta-group">
         <a href="https://tally.so/r/cekrypto-waitlist" class="cta-button">Dapatkan Notifikasi Saat Launch</a>
@@ -219,6 +197,13 @@
       © 2025 Cekrypto — Powered by proprietary insight engine
     </footer>
   </div>
+
+  <noscript>
+    <style>
+      .lang-en, .lang-id { display: block !important; }
+    </style>
+    <p style="color:#f66;text-align:center;">This site requires JavaScript to function properly. Please enable JavaScript in your browser.</p>
+  </noscript>
 
   <script>
     function setLang(lang) {
