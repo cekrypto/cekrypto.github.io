@@ -26,8 +26,8 @@ This landing site includes:
 |-----------------------------|---------------------------------------------------------------|
 | `index.html`                | Main landing screen with logo, bilingual toggle, and CTA      |
 | `problems.html`             | Explains key user problems and Cekrypto's curated solutions   |
-| `cekrypto-logo.png`         | Centered brand logo                                           |
-| `cekrypto-favicon.ico`      | Custom favicon for browser tabs                               |
+| `cekrypto-logo-512-proportional.png`         | Centered brand logo                                           |
+| `cekrypto-favicon-32x32-black.ico`      | Custom favicon for browser tabs                               |
 | `cekrypto-favicon-32x32.png`| PNG variant for mobile/browser support                        |
 | `_headers`                  | Netlify-style headers for security & SEO control              |
 | `robots.txt`                | Prevents indexing by crawlers (`Disallow: /`)                 |
