@@ -19,51 +19,43 @@
       overflow-y: auto;
       overflow-x: hidden;
     }
-
     .container {
       max-width: 960px;
       margin: 0 auto;
       padding: 24px 16px 40px;
       text-align: center;
     }
-
     h2 {
       color: #1dd1a1;
       margin-bottom: 12px;
       font-size: 1.5em;
     }
-
     p {
       font-size: 0.95em;
       max-width: 700px;
       margin: 0 auto 16px;
       line-height: 1.6;
     }
-
     .section {
       margin: 20px auto 32px;
       font-size: 0.92em;
       max-width: 740px;
       text-align: left;
     }
-
     .section strong {
       display: block;
       margin: 14px 0 8px;
       font-size: 1em;
       color: #1dd1a1;
     }
-
     ul {
       list-style: none;
       padding: 0;
       margin: 6px 0 12px;
     }
-
     li {
       margin: 6px 0;
     }
-
     .buttons {
       display: flex;
       justify-content: center;
@@ -71,7 +63,6 @@
       gap: 16px;
       margin-top: 24px;
     }
-
     .cta-button {
       background-color: #1dd1a1;
       color: #0d0f11;
@@ -87,18 +78,15 @@
       box-sizing: border-box;
       text-align: center;
     }
-
     footer {
       font-size: 0.75em;
       color: #777;
       margin-top: 30px;
       line-height: 1.5;
     }
-
     .language-toggle {
       margin-bottom: 16px;
     }
-
     .language-toggle button {
       background-color: #1dd1a1;
       color: #0d0f11;
@@ -110,66 +98,35 @@
       cursor: pointer;
       font-size: 0.85em;
     }
-
     .language-toggle button.active {
       background-color: #10ac84;
     }
-
     .lang-en, .lang-id {
       display: none;
     }
-
     @media (min-width: 601px) and (max-width: 1024px) {
-      h2 {
-        font-size: 1.4em;
-      }
-
-      p, .section, ul, li {
-        font-size: 0.95em;
-      }
-
-      .cta-button {
-        font-size: 1em;
-        padding: 12px 20px;
-      }
+      h2 { font-size: 1.4em; }
+      p, .section, ul, li { font-size: 0.95em; }
+      .cta-button { font-size: 1em; padding: 12px 20px; }
     }
-
     @media (max-width: 600px) {
-      h2 {
-        font-size: 1.3em;
-      }
-
-      p, .section, ul, li {
-        font-size: 0.95em;
-        line-height: 1.6;
-      }
-
-      .cta-button {
-        width: 100%;
-        padding: 14px;
-        font-size: 1em;
-      }
-
-      .buttons {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .container {
-        padding: 20px 16px 32px;
-      }
+      h2 { font-size: 1.3em; }
+      p, .section, ul, li { font-size: 0.95em; line-height: 1.6; }
+      .cta-button { width: 100%; padding: 14px; font-size: 1em; }
+      .buttons { flex-direction: column; gap: 12px; }
+      .container { padding: 20px 16px 32px; }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="language-toggle">
-      <button id="btn-en" onclick="setLang('en')">English</button>
-      <button id="btn-id" onclick="setLang('id')">Indonesia</button>
+      <button id="btn-en" onclick="setLang('en')" aria-label="Toggle to English version">English</button>
+      <button id="btn-id" onclick="setLang('id')" aria-label="Toggle to Indonesian version">Indonesia</button>
     </div>
 
     <!-- English -->
-    <div class="lang-en">
+    <div class="lang-en" lang="en">
       <h2>Solving Real Problems Faced by Crypto Users</h2>
       <p>Cekrypto helps <strong>Traders</strong>, <strong>Teams</strong>, and <strong>Systems</strong> navigate risk with clarity by turning complex signals into contextual insights.</p>
       <div class="section">
@@ -203,7 +160,7 @@
     </div>
 
     <!-- Indonesian -->
-    <div class="lang-id">
+    <div class="lang-id" lang="id">
       <h2>Mengatasi Masalah Nyata Pengguna Kripto</h2>
       <p>Cekrypto membantu <strong>Trader</strong>, <strong>Tim</strong>, dan <strong>Sistem</strong> dalam memahami risiko dengan lebih jelas melalui insight yang relevan dan berbasis konteks.</p>
       <div class="section">
